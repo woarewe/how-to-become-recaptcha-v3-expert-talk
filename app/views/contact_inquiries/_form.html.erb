@@ -26,6 +26,8 @@
     <%= form.text_area :description %>
   </div>
 
+  <%= form.hidden_field :recaptcha_token, data: { "recaptcha-site-key" => ReCaptchaValidator::SITE_KEY } %>
+
   <div class="actions">
     <%= form.submit %>
   </div>

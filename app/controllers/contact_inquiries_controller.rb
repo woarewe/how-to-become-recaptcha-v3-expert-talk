@@ -64,6 +64,6 @@ class ContactInquiriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def contact_inquiry_params
-      params.require(:contact_inquiry).permit(:name, :email, :description)
+      params.require(:contact_inquiry).permit(:name, :email, :description, :recaptcha_token)
     end
 end

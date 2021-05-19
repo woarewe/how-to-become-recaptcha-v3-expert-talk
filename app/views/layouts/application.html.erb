@@ -6,7 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://www.google.com/recaptcha/api.js?render=<%= ReCaptchaValidator::SITE_KEY %>"></script>
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application', media: 'all' %>
   </head>
 
   <body>
